@@ -5,7 +5,7 @@ Departamento de Eletronica e de Computacao
 EEL270 - Computacao II - Turma 2021/2
 Prof. Marcelo Luiz Drumond Lanza
 Autor: Vitor Carneiro Silva de Oliveira
-Descricao: Prototipo funcao CalcularExponencial
+Descricao: Prototipo da funcao CalcularFibonacci
 
 $Author$
 $Date$
@@ -13,15 +13,16 @@ $Log$
 
 */
 
-#ifndef _AULA04_
-#define _AULA04_	"@(#)aula0401.h $Revision$"
+#ifndef _AULA0201_
+#define _AULA0201_  "@(#)aula0201.h $Revision$"
 
-long double
-CalcularExponencial(double, int);
+typedef unsigned short us;
 
-float
-CalcularSerieHarmonicaAlternada(unsigned short int);
+typedef unsigned long long ull;
+
+ull
+CalcularTermoSerieFibonacci (us);
 
 #endif
 
-/* $RCSfile$ */
+/* $RCSfile */

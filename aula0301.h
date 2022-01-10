@@ -5,7 +5,7 @@ Departamento de Eletronica e de Computacao
 EEL270 - Computacao II - Turma 2021/2
 Prof. Marcelo Luiz Drumond Lanza
 Autor: Vitor Carneiro Silva de Oliveira
-Descricao: Prototipo funcao CalcularExponencial
+Descricao: Prototipo da funcao CalcularMaximoDivisorComum
 
 $Author$
 $Date$
@@ -13,14 +13,13 @@ $Log$
 
 */
 
-#ifndef _AULA04_
-#define _AULA04_	"@(#)aula0401.h $Revision$"
+#ifndef _AULA0301_
+#define _AULA0301_	"@(#)aula0301.h $Revision$"
 
-long double
-CalcularExponencial(double, int);
+typedef unsigned long long ull;
 
-float
-CalcularSerieHarmonicaAlternada(unsigned short int);
+ull
+CalcularMaximoDivisorComum (ull, ull);
 
 #endif
 

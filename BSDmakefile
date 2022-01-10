@@ -43,6 +43,7 @@ LFLAGS = -Wall
 # \/ OBJS MACROS\/ --------------------------------------------------------------------------------
 # -- Roteiro 1 \/ ---------------------------------------------------------------------------------
 AULA01 = aula0101 aula0102 aula0103
+
 AULA0101OBJS = aula0101.o
 AULA0102OBJS = aula0102.o
 AULA0103OBJS = aula0103.o
@@ -50,6 +51,7 @@ AULA0103OBJS = aula0103.o
 
 # -- Roteiro 2 \/ ---------------------------------------------------------------------------------
 AULA02 = aula0202a aula0202b aula0202c aula0202d
+
 AULA0202AOBJS = aula0201a.o aula0202.o
 AULA0202BOBJS = aula0201b.o aula0202.o
 AULA0202COBJS = aula0201c.o aula0202.o
@@ -58,6 +60,7 @@ AULA0202DOBJS = aula0201d.o aula0202.o
 
 # -- Roteiro 3 \/ ---------------------------------------------------------------------------------
 AULA03 = aula0302a aula0302b aula0302c aula0302d
+
 AULA0302AOBJS = aula0301a.o aula0302.o
 AULA0302BOBJS = aula0301b.o aula0302.o
 AULA0302COBJS = aula0301c.o aula0302.o
@@ -65,11 +68,14 @@ AULA0302DOBJS = aula0301d.o aula0302.o
 # -- Roteiro 3 /\ ---------------------------------------------------------------------------------
 
 # -- Roteiro 4 \/ ---------------------------------------------------------------------------------
-AULA04 = aula0402a aula0402b aula0402c aula0402d
+AULA04 = aula0402a aula0402b aula0402c aula0402d aula0404a
+
 AULA0402AOBJS = aula0401a.o aula0402.o
 AULA0402BOBJS = aula0401b.o aula0402.o
 AULA0402COBJS = aula0401c.o aula0402.o
 AULA0402DOBJS = aula0401d.o aula0402.o
+
+AULA0404AOBJS = aula0403a.o aula0404.o libmatematicarecursao.a
 
 
 # -- Roteiro 4 /\ ---------------------------------------------------------------------------------
@@ -81,7 +87,7 @@ AULA0402DOBJS = aula0401d.o aula0402.o
 LIBMATEMATICARECURSAOOBJS = aula0201a.o aula0301a.o aula0401a.o
 LIBMATEMATICADOWHILEOBJS = aula0201b.o aula0301b.o aula0401b.o
 LIBMATEMATICAFOROBJS = aula0201c.o aula0301c.o aula0401c.o
-LIBMATEMATICAWHILEOBJS = aula0201d.o aula0301d.o
+LIBMATEMATICAWHILEOBJS = aula0201d.o aula0301d.o aula0401d.o
 # -- Roteiro 2 - 3 - 4 /\ ------------------------------------------------------------------------
 # /\ LIBS MACROS/\ --------------------------------------------------------------------------------
 
@@ -100,7 +106,8 @@ EXECS = aula0101\
 		aula0402a\
 		aula0402b\
 		aula0402c\
-		aula0402d
+		aula0402d\
+		aula0404a
 
 
 LIBS =	libmatematicarecursao.a\
@@ -208,6 +215,11 @@ aula0402c: $(AULA0402COBJS)
 
 aula0402d: $(AULA0402DOBJS)
 	$(LD) $(LFLAGS) -o $@ $(AULA0402DOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+
+aula0404a: $(AULA0404AOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0404AOBJS) -L. -lmatematicarecursao
 	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
 
 
