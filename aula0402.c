@@ -37,6 +37,12 @@ $Log$
 #define NUMERO_ARGUMENTOS			        3
 #define END_OF_STRING				        '\0'
 
+#if defined (__STRICT_ANSI__) && defined (__linux__)
+		#define INF 						1.0/0.0
+	#else
+		#define INF							INFINITY
+	#endif
+
 int
 main (int argc, char *argv[])
 {
@@ -94,13 +100,17 @@ main (int argc, char *argv[])
 /* \/ CHAMADA FUNCAO PRINCIPAL \/ ----------------------------------------------------------------- */
 
 	expoente = (int) expoenteLongo;
-	calculoExponencial = CalcularExponencial (base, expoente);
+	calculoExponencial = CalcularExponencial(base, expoente);
 	
-	if (calculoExponencial <= LDBL_MAX) /* Retorna erro se o calculo for maior que valor maximo para long double */
-		printf ("%.10f ^ %i = %.10Lf\n", base, expoente, CalcularExponencial (base, expoente));	/*Imprime calculo sem erro */
+	if (calculoExponencial == INF)
+		printf ("%.10f ^ %i = %.10Lf\n", base, expoente, CalcularExponencial(base, expoente));
+
+	/* Retorna erro se o calculo for maior que valor maximo para long double */
+	else if (calculoExponencial >= LDBL_MAX && calculoExponencial != INF) 
+		printf ("Impossivel calcular (%.10f ^ %i), resultado excede valor maximo permitido para long double\n", base, expoente);
 
 	else
-		printf ("Impossivel calcular (%.10f ^ %i), resultado excede valor maximo permitido para long double\n", base, expoente);
+		printf ("%.10f ^ %i = %.10Lf\n", base, expoente, CalcularExponencial(base, expoente));	/*Imprime calculo sem erro */
 
 	return OK;
 
