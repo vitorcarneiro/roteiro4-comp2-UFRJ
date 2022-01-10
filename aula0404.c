@@ -46,7 +46,7 @@ main (int argc, char *argv[])
 
 /* \/ DECLARACAO DE VARIAVEIS \/ ------------------------------------------------------------------ */
 	
-	unsigned short int termoAtualN;	/* n representa o termo exemplo S(2) = 1 - 1/2 (n = 2 neste caso) */
+	unsigned short int termoAtualN = 0;	/* n representa o termo exemplo S(2) = 1 - 1/2 (n = 2 neste caso) */
 	float p, resultadoAnterior = 0, resultadoAtual = 0, modSerie = 0;
 	char *verificacao;
 
