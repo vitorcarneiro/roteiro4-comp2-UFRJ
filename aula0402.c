@@ -97,7 +97,7 @@ main (int argc, char *argv[])
 	calculoExponencial = CalcularExponencial (base, expoente);
 	
 	if (calculoExponencial <= LDBL_MAX) /* Retorna erro se o calculo for maior que valor maximo para long double */
-		printf ("\n%.10f ^ %i = %.10Lf\n", base, expoente, CalcularExponencial (base, expoente));	/*Imprime calculo sem erro */
+		printf ("%.10f ^ %i = %.10Lf\n", base, expoente, CalcularExponencial (base, expoente));	/*Imprime calculo sem erro */
 
 	else
 		printf ("Impossivel calcular (%.10f ^ %i), resultado excede valor maximo permitido para long double\n", base, expoente);
