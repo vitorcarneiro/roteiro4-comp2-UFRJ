@@ -15,8 +15,9 @@ $Log$
 
 #include "aula0401.h"
 
-float  CalcularSerieHarmonicaAlternada (unsigned short int n){
-
+float
+CalcularSerieHarmonicaAlternada (unsigned short int n)
+{
 	if(n == 0)
 	{
 		return 0;
@@ -33,7 +34,6 @@ float  CalcularSerieHarmonicaAlternada (unsigned short int n){
         n--;
 	}
 	while(n > 0);
-
 }
 
 /* $RCSfile$ */

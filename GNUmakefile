@@ -74,7 +74,7 @@ AULA0302DOBJS = aula0301d.o aula0302.o
 # -- Roteiro 3 /\ ---------------------------------------------------------------------------------
 
 # -- Roteiro 4 \/ ---------------------------------------------------------------------------------
-AULA04 = aula0402a aula0402b aula0402c aula0402d aula0404a aula0404b
+AULA04 = aula0402a aula0402b aula0402c aula0402d aula0404a aula0404b aula0404c
 
 AULA0402AOBJS = aula0401a.o aula0402.o
 AULA0402BOBJS = aula0401b.o aula0402.o
@@ -83,6 +83,8 @@ AULA0402DOBJS = aula0401d.o aula0402.o
 
 AULA0404AOBJS = aula0403a.o aula0404.o libmatematicarecursao.a
 AULA0404BOBJS = aula0403b.o aula0404.o libmatematicadowhile.a
+AULA0404COBJS = aula0403c.o aula0404.o libmatematicafor.a
+
 
 
 # -- Roteiro 4 /\ ---------------------------------------------------------------------------------
@@ -92,7 +94,7 @@ AULA0404BOBJS = aula0403b.o aula0404.o libmatematicadowhile.a
 # \/ LIBS MACROS\/ --------------------------------------------------------------------------------
 # -- Roteiros 2 - 3 - 4 \/ ------------------------------------------------------------------------
 LIBMATEMATICARECURSAOOBJS = aula0201a.o aula0301a.o aula0401a.o aula0403a.o
-LIBMATEMATICADOWHILEOBJS = aula0201b.o aula0301b.o aula0401b.o
+LIBMATEMATICADOWHILEOBJS = aula0201b.o aula0301b.o aula0401b.o aula0403b.o
 LIBMATEMATICAFOROBJS = aula0201c.o aula0301c.o aula0401c.o
 LIBMATEMATICAWHILEOBJS = aula0201d.o aula0301d.o aula0401d.o
 # -- Roteiro 2 - 3 - 4 /\ ------------------------------------------------------------------------
@@ -116,7 +118,8 @@ EXECS = aula0101\
 		aula0402c\
 		aula0402d\
 		aula0404a\
-		aula0404b
+		aula0404b\
+		aula0404c
 
 LIBS =	libmatematicarecursao.a\
 	libmatematicadowhile.a\
@@ -231,6 +234,10 @@ aula0404a: $(AULA0404AOBJS)
 
 aula0404b: $(AULA0404BOBJS)
 	$(LD) $(LFLAGS) -o $@ $(AULA0404BOBJS) -L. -lmatematicadowhile
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+aula0404c: $(AULA0404COBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0404COBJS) -L. -lmatematicafor
 	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
 
 
