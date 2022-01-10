@@ -68,7 +68,7 @@ AULA0302DOBJS = aula0301d.o aula0302.o
 # -- Roteiro 3 /\ ---------------------------------------------------------------------------------
 
 # -- Roteiro 4 \/ ---------------------------------------------------------------------------------
-AULA04 = aula0402a aula0402b aula0402c aula0402d aula0404a aula0404b aula0404c aula0404d
+AULA04 = aula0402a aula0402b aula0402c aula0402d aula0404a aula0404b aula0404c aula0404d aula0404e
 
 AULA0402AOBJS = aula0401a.o aula0402.o
 AULA0402BOBJS = aula0401b.o aula0402.o
@@ -80,9 +80,7 @@ AULA0404BOBJS = aula0403b.o aula0404.o libmatematicadowhile.a
 AULA0404COBJS = aula0403c.o aula0404.o libmatematicafor.a
 AULA0404DOBJS = aula0403d.o aula0404.o libmatematicawhile.a
 
-
-
-
+AULA0404EOBJS = aula0403e.o aula0404.o libmatematicafor.a
 # -- Roteiro 4 /\ ---------------------------------------------------------------------------------
 # /\ OBJS MACROS/\ --------------------------------------------------------------------------------
 
@@ -92,7 +90,7 @@ AULA0404DOBJS = aula0403d.o aula0404.o libmatematicawhile.a
 LIBMATEMATICARECURSAOOBJS = aula0201a.o aula0301a.o aula0401a.o aula0403a.o
 LIBMATEMATICADOWHILEOBJS = aula0201b.o aula0301b.o aula0401b.o aula0403b.o
 LIBMATEMATICAFOROBJS = aula0201c.o aula0301c.o aula0401c.o aula0403c.o
-LIBMATEMATICAWHILEOBJS = aula0201d.o aula0301d.o aula0401d.o
+LIBMATEMATICAWHILEOBJS = aula0201d.o aula0301d.o aula0401d.o aula0403d.o
 # -- Roteiro 2 - 3 - 4 /\ ------------------------------------------------------------------------
 # /\ LIBS MACROS/\ --------------------------------------------------------------------------------
 
@@ -115,7 +113,8 @@ EXECS = aula0101\
 		aula0404a\
 		aula0404b\
 		aula0404c\
-		aula0404d
+		aula0404d\
+		aula0404e
 
 
 LIBS =	libmatematicarecursao.a\
@@ -168,6 +167,7 @@ aula0202c: $(AULA0202COBJS)
 aula0202d: $(AULA0202DOBJS)
 	$(LD) $(LFLAGS) -o $@ $(AULA0202DOBJS)
 	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
 
 libmatematicarecursao.a: $(LIBMATEMATICARECURSAOOBJS)
 	ar -r -c $@ $(LIBMATEMATICARECURSAOOBJS)
@@ -242,6 +242,9 @@ aula0404d: $(AULA0404DOBJS)
 	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
 
 
+aula0404e: $(AULA0404EOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0404EOBJS) -lm
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
 # -- Roteiro 4 /\ ---------------------------------------------------------------------------------
 
 .PHONY: clean clean-all clean-objs clean-freebsd clean-linux clean-gcc clean-clang clean-ansi clean-c89 clean-c90 clean-c99 clean-c11
