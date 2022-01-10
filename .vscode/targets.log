@@ -1,0 +1,639 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'aula0101.o', needed by 'aula0101'.  Stop.
+ 
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Jan  9 22:49:17 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID
+# default
+.SHELLFLAGS := -c
+# makefile (from 'GNUmakefile', line 61)
+AULA0202COBJS = aula0201c.o aula0202.o
+# environment
+VSCODE_AGENT_FOLDER = /home/vitorcarneiro/.vscode-server
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from 'GNUmakefile', line 74)
+AULA04 = aula0402a 
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /home/vitorcarneiro/COMPUTACAO-2/AULAS-PRATICAS/roteiro4
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /mnt/c/Users/vitor/AppData/Local/Programs/Microsoft VS Code/bin/code
+# makefile (from 'GNUmakefile', line 46)
+CFLAGS = -Wall $(STANDARD)
+# makefile (from 'GNUmakefile', line 1)
+MAKEFILE_LIST :=  GNUmakefile
+# makefile (from 'GNUmakefile', line 94)
+EXECS = aula0101 aula0102 aula0103 aula0202a aula0202b aula0202c aula0202d aula0302a aula0302b aula0302c aula0302d aula0402a
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from 'GNUmakefile', line 87)
+LIBMATEMATICAWHILEOBJS = aula0201d.o aula0301d.o
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from 'GNUmakefile', line 69)
+AULA0302COBJS = aula0301c.o aula0302.o
+# environment
+VSCODE_CWD = /mnt/c/Users/vitor/AppData/Local/Programs/Microsoft VS Code
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/vitorcarneiro/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/vitor/AppData/Local/Microsoft/WindowsApps:/mnt/c/MinGW/bin:/mnt/c/Users/vitor/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/vitor/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/vitor/AppData/Roaming/npm
+# makefile (from 'GNUmakefile', line 21)
+LD = $(CC)
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from 'GNUmakefile', line 86)
+LIBMATEMATICAFOROBJS = aula0201c.o aula0301c.o
+# environment
+XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
+# makefile (from 'GNUmakefile', line 75)
+AULA0402AOBJS = aula0401a.o aula0402.o
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-592a0a6e-abbd-44d4-91d8-998089350b0e.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# automatic
+%F = $(notdir $%)
+# makefile (from 'GNUmakefile', line 51)
+AULA01 = aula0101 aula0102 aula0103
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# makefile (from 'GNUmakefile', line 24)
+STANDARD = -ansi
+# makefile (from 'GNUmakefile', line 62)
+AULA0202DOBJS = aula0201d.o aula0202.o
+# environment
+PWD = /home/vitorcarneiro/COMPUTACAO-2/AULAS-PRATICAS/roteiro4
+# default
+.LOADED := 
+# makefile (from 'GNUmakefile', line 52)
+AULA0101OBJS = aula0101.o
+# environment
+WSL_INTEROP = /run/WSL/3812_interop
+# environment
+PULSE_SERVER = /mnt/wslg/PulseServer
+# environment
+WT_SESSION = 44611250-52d0-41b6-a441-b58f5651146d
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/server/remoteExtensionHostProcess
+# environment
+HOME = /home/vitorcarneiro
+# makefile (from 'GNUmakefile', line 58)
+AULA02 = aula0202a aula0202b aula0202c aula0202d
+# makefile (from 'GNUmakefile', line 84)
+LIBMATEMATICARECURSAOOBJS = aula0201a.o aula0301a.o
+# environment
+LOGNAME = vitorcarneiro
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+ZSH = /home/vitorcarneiro/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'GNUmakefile', line 53)
+AULA0102OBJS = aula0102.o
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from 'GNUmakefile', line 15)
+CC = gcc
+# makefile (from 'GNUmakefile', line 70)
+AULA0302DOBJS = aula0301d.o aula0302.o
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = vitorcarneiro
+# makefile
+.DEFAULT_GOAL := all
+# environment
+NAME = Code
+# makefile (from 'GNUmakefile', line 114)
+ALL = $(EXECS) $(LIBS)
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from 'GNUmakefile', line 47)
+LFLAGS = -Wall
+# makefile (from 'GNUmakefile', line 66)
+AULA03 = aula0302a aula0302b aula0302c aula0302d
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/vitor/.vscode/extensions/ms-vscode-remote.remote-wsl-0.63.13
+# default
+MAKE_COMMAND := make
+# makefile (from 'GNUmakefile', line 23)
+DIALETO = ansi
+# environment
+OLDPWD = /mnt/c/Users/vitor/AppData/Local/Programs/Microsoft VS Code
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile (from 'GNUmakefile', line 13)
+OS = $(shell uname -s)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from 'GNUmakefile', line 54)
+AULA0103OBJS = aula0103.o
+# makefile (from 'GNUmakefile', line 59)
+AULA0202AOBJS = aula0201a.o aula0202.o
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+WT_PROFILE_ID = {61c54bbd-c2c6-5271-96e7-009a87ff44bf}
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'GNUmakefile', line 60)
+AULA0202BOBJS = aula0201b.o aula0202.o
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from 'GNUmakefile', line 68)
+AULA0302BOBJS = aula0301b.o aula0302.o
+# environment
+HOSTTYPE = x86_64
+# makefile (from 'GNUmakefile', line 107)
+LIBS = libmatematicarecursao.a libmatematicadowhile.a libmatematicafor.a libmatematicawhile.a libmonitor.a libbase.a
+# environment
+ZSH_WAKATIME_PROJECT_DETECTION = true
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+WAYLAND_DISPLAY = wayland-0
+# makefile (from 'GNUmakefile', line 67)
+AULA0302AOBJS = aula0301a.o aula0302.o
+# makefile (from 'GNUmakefile', line 85)
+LIBMATEMATICADOWHILEOBJS = aula0201b.o aula0301b.o
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+VSCODE_INJECT_NODE_MODULE_LOOKUP_PATH = /home/vitorcarneiro/.vscode-server/bin/899d46d82c4c95423fb7e10e68eba52050e30ba3/remote/node_modules
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+WSL_DISTRO_NAME = Ubuntu
+# variable set hash-table stats:
+# Load=107/1024=10%, Rehash=0, Collisions=13/160=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2080, inode 42194): 2 files, no impossibilities so far.
+
+# 2 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+aula0202b: aula0201b.o aula0202.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 147):
+	$(LD) $(LFLAGS) -o $@ $(AULA0202BOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+# Not a target:
+aula0302.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+aula0301a.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+libmatematicarecursao.a: aula0201a.o aula0301a.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 159):
+	ar -r -c $@ $(LIBMATEMATICARECURSAOOBJS)
+
+all: aula0101 aula0102 aula0103 aula0202a aula0202b aula0202c aula0202d aula0302a aula0302b aula0302c aula0302d aula0402a libmatematicarecursao.a libmatematicadowhile.a libmatematicafor.a libmatematicawhile.a libmonitor.a libbase.a
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+ 
+#  File has not been updated.
+
+clean-ansi:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 230):
+	rm -f *.o $(ALL) *-ansi *.core
+
+.PHONY: clean clean-all clean-objs clean-freebsd clean-linux clean-gcc clean-clang clean-ansi clean-c89 clean-c90 clean-c99 clean-c11
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+aula04: aula0402a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+aula0302a: aula0301a.o aula0302.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 176):
+	$(LD) $(LFLAGS) -o $@ $(AULA0302AOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+# Not a target:
+aula0301b.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+aula0201c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+libmatematicafor.a: aula0201c.o aula0301c.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 165):
+	ar -r -c $@ $(LIBMATEMATICAFOROBJS)
+
+libmatematicadowhile.a: aula0201b.o aula0301b.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 162):
+	ar -r -c $@ $(LIBMATEMATICADOWHILEOBJS)
+
+aula0302b: aula0301b.o aula0302.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 180):
+	$(LD) $(LFLAGS) -o $@ $(AULA0302BOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+aula0202c: aula0201c.o aula0202.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 151):
+	$(LD) $(LFLAGS) -o $@ $(AULA0202COBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+# Not a target:
+aula0301c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean-linux:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 221):
+	rm -f *.o $(ALL) *-Linux-* *.core
+
+# Not a target:
+aula0402.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+aula0401a.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+aula0302c: aula0301c.o aula0302.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 184):
+	$(LD) $(LFLAGS) -o $@ $(AULA0302COBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+.c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 118):
+	$(CC) $(CFLAGS) -c $<
+
+aula01: aula0101 aula0102 aula0103
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+aula0402a: aula0401a.o aula0402.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 197):
+	$(LD) $(LFLAGS) -o $@ $(AULA0402AOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+# Not a target:
+libbase.a:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean-c90:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 236):
+	rm -f *.o $(ALL) *-c90 *.core
+
+# Not a target:
+aula0201d.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean-freebsd:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 218):
+	rm -f *.o $(ALL) *-FreeBSD-* *.core
+
+clean-c11:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 242):
+	rm -f *.o $(ALL) *-c11 *.core
+
+aula02: aula0202a aula0202b aula0202c aula0202d
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+aula0101: aula0101.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 126):
+	$(LD) $(LFLAGS) -o $@ $(AULA0101OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+aula0202d: aula0201d.o aula0202.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 155):
+	$(LD) $(LFLAGS) -o $@ $(AULA0202DOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+# Not a target:
+libmonitor.a:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 209):
+	rm -f *.o $(ALL) *.core
+
+# Not a target:
+aula0101.o:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+aula0102: aula0102.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 130):
+	$(LD) $(LFLAGS) -o $@ $(AULA0102OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+# Not a target:
+aula0301d.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+aula03: aula0302a aula0302b aula0302c aula0302d
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean-all:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 212):
+	rm -f *.o $(ALL) *-FreeBSD-* *-Linux-* *.core
+
+# Not a target:
+aula0102.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-09 22:48:09.2454227
+#  File has been updated.
+#  Successfully updated.
+
+ 
+aula0302d: aula0301d.o aula0302.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 188):
+	$(LD) $(LFLAGS) -o $@ $(AULA0302DOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+# Not a target:
+aula0202.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+aula0201a.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean-gcc:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 224):
+	rm -f *.o $(ALL) *-gcc-* *.core
+
+aula0103: aula0103.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 134):
+	$(LD) $(LFLAGS) -o $@ $(AULA0103OBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+libmatematicawhile.a: aula0201d.o aula0301d.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 168):
+	ar -r -c $@ $(LIBMATEMATICAWHILEOBJS)
+
+clean-objs:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 215):
+	rm -f *.o *.core
+
+aula0202a: aula0201a.o aula0202.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 143):
+	$(LD) $(LFLAGS) -o $@ $(AULA0202AOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+# Not a target:
+aula0103.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean-c89:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 233):
+	rm -f *.o $(ALL) *-c89 *.core
+
+# Not a target:
+aula0201b.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean-c99:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 239):
+	rm -f *.o $(ALL) *-c99 *.core
+
+clean-clang:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 227):
+	rm -f *.o $(ALL) *-clang-* *.core
+
+# files hash-table stats:
+# Load=55/1024=5%, Rehash=0, Collisions=6/165=4%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 59 / storage = 647 B / avg = 10 B
+# current buf: size = 8162 B / used = 647 B / count = 59 / avg = 10 B
+
+# strcache performance: lookups = 152 / hit rate = 61%
+# hash-table stats:
+# Load=59/8192=1%, Rehash=0, Collisions=0/152=0%
+# Finished Make data base on Sun Jan  9 22:49:17 2022
+
+ 

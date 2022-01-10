@@ -3,39 +3,45 @@
 # Departamento de Eletronica e de Computacao
 # EEL270 - Computacao II - Turma 2021/2
 # Prof. Marcelo Luiz Drumond Lanza
-# Autor: Vitor Carneiro Silva de Oliveira
-# Descricao: Arquivo de dependencias para FreeBSD
+# Autor: <nome completo>
+# Descricao: Arquivo de dependencias para Linux
 
 # $Author$
 # $Date$
 # $Log$
 
-OS = `uname -s`
+OS = $(shell uname -s)
 
 CC = gcc
 
-.ifdef CLANG
+ifeq ($(cc), CLANG)
 CC = clang
-.endif
+endif
 
 LD = $(CC)
 
 DIALETO = ansi
 STANDARD = -ansi
 
-.ifdef C89
+ifeq ($(dialeto), C89)
 DIALETO = c89
 STANDARD = -std=c89
-.elif C90
+endif
+
+ifeq ($(dialeto), C90)
 DIALETO = c90
 STANDARD = -std=c90
-.elif C99
+endif
+
+ifeq ($(dialeto), C99)
 DIALETO = c99
 STANDARD = -std=c99
-.elif C11
+endif
+
+ifeq ($(dialeto), C11)
 DIALETO = c11
 STANDARD = -std=c11
-.endif
+endif
 
 CFLAGS = -Wall $(STANDARD)
 LFLAGS = -Wall
@@ -62,19 +68,27 @@ AULA0302AOBJS = aula0301a.o aula0302.o
 AULA0302BOBJS = aula0301b.o aula0302.o
 AULA0302COBJS = aula0301c.o aula0302.o
 AULA0302DOBJS = aula0301d.o aula0302.o
-
 # -- Roteiro 3 /\ ---------------------------------------------------------------------------------
+
+# -- Roteiro 4 \/ ---------------------------------------------------------------------------------
+AULA04 = aula0402a 
+AULA0402AOBJS = aula0401a.o aula0402.o
+
+# -- Roteiro 4 /\ ---------------------------------------------------------------------------------
 # /\ OBJS MACROS/\ --------------------------------------------------------------------------------
 
 
 # \/ LIBS MACROS\/ --------------------------------------------------------------------------------
 # -- Roteiro 2 \/ ---------------------------------------------------------------------------------
+# ---- Roteiro 4 \/ -------------------------------------------------------------------------------
 LIBMATEMATICARECURSAOOBJS = aula0201a.o aula0301a.o
 LIBMATEMATICADOWHILEOBJS = aula0201b.o aula0301b.o
 LIBMATEMATICAFOROBJS = aula0201c.o aula0301c.o
 LIBMATEMATICAWHILEOBJS = aula0201d.o aula0301d.o
+# ---- Roteiro 3 /\ -------------------------------------------------------------------------------
 # -- Roteiro 2 /\ ---------------------------------------------------------------------------------
 # /\ LIBS MACROS/\ --------------------------------------------------------------------------------
+
 
 
 EXECS = aula0101\
@@ -87,8 +101,8 @@ EXECS = aula0101\
 		aula0302a\
 		aula0302b\
 		aula0302c\
-		aula0302d
-
+		aula0302d\
+		aula0402a
 
 LIBS =	libmatematicarecursao.a\
 	libmatematicadowhile.a\
@@ -170,12 +184,24 @@ aula0302c: $(AULA0302COBJS)
 	$(LD) $(LFLAGS) -o $@ $(AULA0302COBJS)
 	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
 
-	
 aula0302d: $(AULA0302DOBJS)
 	$(LD) $(LFLAGS) -o $@ $(AULA0302DOBJS)
 	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
 
 # -- Roteiro 3 /\ ---------------------------------------------------------------------------------
+
+
+# -- Roteiro 4 \/ ----------------------------------------------------------------------------------
+aula04: $(AULA04)
+
+aula0402a: $(AULA0402AOBJS)
+	$(LD) $(LFLAGS) -o $@ $(AULA0402AOBJS)
+	cp -f $@ $@-$(OS)-$(CC)-$(DIALETO)
+
+
+
+# -- Roteiro 4 /\ ---------------------------------------------------------------------------------
+
 
 
 .PHONY: clean clean-all clean-objs clean-freebsd clean-linux clean-gcc clean-clang clean-ansi clean-c89 clean-c90 clean-c99 clean-c11
